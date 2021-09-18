@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: 'KoHo', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background:url('img/bg.jpg');
+        height: 1330px;
+    }
+    .left{
+        cursor: pointer;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid rgb(240, 219, 219);
+
+
+    }
+    .left div:hover{
+        background-color: gray;
+    }
+    .left img{
+
+        width: 36px;
+        /* invert function black image ko white or vice vrsa  */
+        /* filter: invert(100%); */
+    
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .mid{
+        /* kese bhi cheez ko center me laane ke leye margin:auto;  or display block krna hota h
+        ka use krte h  */
+        display: block;
+        width: 35%;
+        margin:  20px auto;
+        border: 2px solid rgb(238, 223, 223);
+
+
+    }
+    .right{
+        /* I am right ko right me le jaane ke leye position: absolute; ka use krke right or top de skte h */
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid rgb(245, 227, 227);
+
+
+    }
+    .navbar{
+        /* display: inline-block; me display bhi inline rhti h or hm iski width or height set kr skte h  */
+        display: inline-block;
+        
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+        
+    
+    }
+    .navbar li a{
+        color: white;
+        /* neche ki line ko remove krne ke leye  */
+        text-decoration: none;
+        padding: 2px 4px;
+    }
+
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn{
+        font-family: 'KoHo', sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(82, 76, 76);
+    }
+    .container{
+        border: 5px solid green;
+        margin: 100px 80px ;
+        padding: 100px;
+        width: 33%;
+        border-radius: 2px;
+    }
+    .form-group input{
+        font-family: 'KoHo', sans-serif;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 5px auto;
+        font-size: 25px;
+        border-radius: 8px;
+
+    }
+           
+</style>
+<body>
+    <header class="header"
+        <!-- Left box for logo -->
+        <div class="left">
+          <img src="img/gym.png" alt="">
+          <div>Steve fitness</div>
+
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">About us</a></li>
+                <li> <a href="#">Fitness center</a></li>
+                <li> <a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>join the best gym of jaipur now</h1>
+        <form action="noaction.php"></form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your address">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your college/school name">
+        </div>
+        <button class="btn">submit</button>
+        <button class="btn">Reset now</button>
+
+    </div>
+</body>
+</html>
